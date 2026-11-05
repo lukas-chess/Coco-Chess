@@ -1,0 +1,33 @@
+Coco Chess – Lizenz- und Quellenhinweise
+========================================
+
+Coco Chess ist freie Software und steht unter der GNU General Public License,
+Version 3 oder (nach Wahl) einer späteren Version (GPL-3.0-or-later).
+Der vollständige Quellcode von Coco Chess liegt im öffentlichen Repository,
+aus dem diese Seite veröffentlicht wurde.
+
+Verwendete Bestandteile
+-----------------------
+1. Stockfish (Schachengine) – GPL-3.0
+   Copyright (C) The Stockfish developers (siehe AUTHORS-Datei des Projekts)
+   Quellcode: https://github.com/official-stockfish/Stockfish
+   Lizenztext: stockfish-license.txt (liegt dieser App bei)
+
+2. stockfish.js (WebAssembly-Port von Stockfish für Browser) – GPL-3.0
+   Autor: Nathan Rugg (nmrugg), Chess.com
+   Quellcode: https://github.com/nmrugg/stockfish.js
+   npm-Paket: "stockfish"
+   Die Engine-Dateien dieser App (Ordner "engine") sind unveränderte Dateien
+   dieses Pakets. Die Stockfish-Netzwerkdateien (NNUE) sind Teil des Pakets
+   und unterliegen den dort genannten Bedingungen.
+
+3. chess.js (Schachregeln) – BSD-2-Clause
+   Copyright (c) Jeff Hlywa
+   Quellcode: https://github.com/jhlywa/chess.js
+   Lizenztext: chess.js-license.txt (liegt dieser App bei)
+
+Nur beim Entwickeln (nicht Teil der ausgelieferten App):
+4. Vite – MIT-Lizenz, https://github.com/vitejs/vite
+
+Hinweis: Die genauen Versionen stehen in package.json bzw. engine/engine.json.
+Es werden keine Daten an Server übertragen; alle Berechnungen laufen lokal.

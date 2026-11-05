@@ -1,0 +1,33 @@
+<!doctype html>
+<html lang="de" data-theme="dark">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover" />
+    <title>Coco Chess</title>
+    <meta name="description" content="Coco Chess – dein Schachcomputer für das echte Brett. Läuft lokal mit Stockfish, auch offline." />
+    <meta name="theme-color" content="#0e181c" id="metaTheme" />
+    <meta name="apple-mobile-web-app-capable" content="yes" />
+    <meta name="mobile-web-app-capable" content="yes" />
+    <meta name="apple-mobile-web-app-title" content="Coco Chess" />
+    <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent" />
+    <meta name="format-detection" content="telephone=no" />
+    <link rel="manifest" href="/manifest.webmanifest" />
+    <link rel="apple-touch-icon" href="/icons/apple-touch-icon.png" />
+    <link rel="icon" type="image/png" href="/icons/icon-192.png" />
+    <script>
+      // Theme sofort setzen (verhindert Aufblitzen). Spiegel der IndexedDB-Einstellung.
+      (function () {
+        try {
+          var t = localStorage.getItem('coco-theme') || 'system';
+          var dark = t === 'dark' || (t === 'system' && matchMedia('(prefers-color-scheme: dark)').matches);
+          document.documentElement.dataset.theme = dark ? 'dark' : 'light';
+        } catch (e) {}
+      })();
+    </script>
+  </head>
+  <body>
+    <div id="app"></div>
+    <noscript>Coco Chess benötigt JavaScript.</noscript>
+    <script type="module" src="/src/main.js"></script>
+  </body>
+</html>

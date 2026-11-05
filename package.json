@@ -1,0 +1,22 @@
+{
+  "name": "coco-chess",
+  "version": "1.0.0",
+  "description": "Coco Chess – persönlicher Schachcomputer für das echte Brett (PWA)",
+  "private": true,
+  "type": "module",
+  "license": "GPL-3.0-or-later",
+  "scripts": {
+    "engine": "node scripts/prepare-engine.mjs",
+    "dev": "node scripts/prepare-engine.mjs && vite --host",
+    "build": "node scripts/prepare-engine.mjs && vite build",
+    "preview": "vite preview --host",
+    "test": "node --test \"tests/*.test.js\""
+  },
+  "dependencies": {
+    "chess.js": "^1.0.0",
+    "stockfish": ">=16.0.0 <19.0.0"
+  },
+  "devDependencies": {
+    "vite": "^6.0.0"
+  }
+}

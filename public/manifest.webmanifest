@@ -1,0 +1,17 @@
+{
+  "name": "Coco Chess",
+  "short_name": "Coco Chess",
+  "description": "Persönlicher Schachcomputer für dein echtes Brett",
+  "lang": "de",
+  "start_url": "./",
+  "scope": "./",
+  "display": "standalone",
+  "orientation": "portrait",
+  "background_color": "#0e181c",
+  "theme_color": "#0e181c",
+  "icons": [
+    { "src": "icons/icon-192.png", "sizes": "192x192", "type": "image/png" },
+    { "src": "icons/icon-512.png", "sizes": "512x512", "type": "image/png" },
+    { "src": "icons/icon-maskable-512.png", "sizes": "512x512", "type": "image/png", "purpose": "maskable" }
+  ]
+}
